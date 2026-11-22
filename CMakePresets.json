@@ -1,0 +1,34 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "vs2026",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/vs2026",
+      "cacheVariables": { "BUILD_TESTING": "ON" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "vs2026", "configurePreset": "vs2026", "configuration": "Release" }
+  ],
+  "testPresets": [
+    {
+      "name": "vs2026",
+      "configurePreset": "vs2026",
+      "configuration": "Release",
+      "output": { "outputOnFailure": true },
+      "execution": { "noTestsAction": "error" }
+    }
+  ],
+  "workflowPresets": [
+    {
+      "name": "build-test",
+      "steps": [
+        { "type": "configure", "name": "vs2026" },
+        { "type": "build", "name": "vs2026" },
+        { "type": "test", "name": "vs2026" }
+      ]
+    }
+  ]
+}

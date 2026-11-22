@@ -1,0 +1,22 @@
+#pragma once
+
+#define REAPERAPI_MINIMAL
+#define REAPERAPI_WANT_AddCustomizableMenu
+#define REAPERAPI_WANT_CountTrackMediaItems
+#define REAPERAPI_WANT_CountTracks
+#define REAPERAPI_WANT_EnumProjects
+#define REAPERAPI_WANT_GetActiveTake
+#define REAPERAPI_WANT_GetMediaItemInfo_Value
+#define REAPERAPI_WANT_GetNumRegionsOrMarkers
+#define REAPERAPI_WANT_GetRegionOrMarker
+#define REAPERAPI_WANT_GetRegionOrMarkerInfo_Value
+#define REAPERAPI_WANT_GetSetMediaItemTakeInfo
+#define REAPERAPI_WANT_GetSetRegionOrMarkerInfo
+#define REAPERAPI_WANT_GetSetRegionOrMarkerInfo_String
+#define REAPERAPI_WANT_GetTrack
+#define REAPERAPI_WANT_GetTrackMediaItem
+#define REAPERAPI_WANT_ShowConsoleMsg
+#define REAPERAPI_WANT_Undo_BeginBlock2
+#define REAPERAPI_WANT_Undo_EndBlock2
+#define REAPERAPI_WANT_UpdateArrange
+#include <reaper_plugin_functions.h>
